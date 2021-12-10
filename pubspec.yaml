@@ -1,0 +1,150 @@
+name: enough_mail_app
+description: Maily aims to become a fully feature email app once it has grown up.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+66
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  enough_mail: #^1.3.6
+    git:
+      url: https://github.com/Enough-Software/enough_mail.git
+    # path: ../enough_mail
+  enough_mail_flutter: #^1.3.0
+    git:
+      url: https://github.com/Enough-Software/enough_mail_flutter.git
+    # path: ../enough_mail_flutter
+  enough_html_editor: #^0.0.3
+    git:
+      url: https://github.com/Enough-Software/enough_html_editor.git
+    # path: ../enough_html_editor
+  enough_text_editor: #^0.0.3
+    git:
+      url: https://github.com/Enough-Software/enough_text_editor.git
+    #path: ../enough_text_editor
+  enough_icalendar: #^0.5.0
+    git:
+      url: https://github.com/Enough-Software/enough_icalendar.git
+    # path: ../enough_icalendar
+  enough_mail_icalendar: #^0.2.0
+    git:
+      url: https://github.com/Enough-Software/enough_mail_icalendar.git
+    # path: ../enough_mail_icalendar
+  enough_icalendar_export: #^0.2.0
+    git:
+      url: https://github.com/Enough-Software/enough_icalendar_export.git
+    # path: ../enough_icalendar_export
+  enough_serialization: ^1.4.0
+    # git:
+    #   url: https://github.com/Enough-Software/enough_serialization.git
+    #path: ../enough_serialization
+  enough_ascii_art: #^1.0.0
+    git:
+      url: https://github.com/Enough-Software/enough_ascii_art.git
+  enough_giphy_flutter:
+    git:
+      url: https://github.com/Enough-Software/enough_giphy_flutter.git
+  event_bus: ^2.0.0
+  intl: ^0.17.0
+  flutter_secure_storage: ^4.2.0
+  get_it: ^7.0.0 #7.1.4 is incompatible with Flutter Test because of different asycn dependencies 
+  url_launcher: ^6.0.6
+  path_provider: ^2.0.2
+  share: ^2.0.4
+  flutter_local_notifications: ^6.0.0
+  shared_preferences: ^2.0.6
+  background_fetch: ^1.0.0
+  file_picker: ^3.0.2+2
+  fluttercontactpicker: ^4.5.1
+  google_fonts: ^2.1.0
+  cupertino_icons: ^1.0.3
+  package_info: ^2.0.2
+  device_info: ^2.0.2
+  latlng: ^0.1.0
+  map: ^1.0.0
+  cached_network_image: ^3.0.0
+  location: ^4.3.0
+  flutter_widget_from_html_core: ^0.6.0
+  shimmer_animation: ^2.0.0
+  badges: ^2.0.1
+  community_material_icon: ^5.9.55
+  enough_platform_widgets: #^0.2.0
+    git:
+      url: https://github.com/Enough-Software/enough_platform_widgets.git
+    # path: ../enough_platform_widgets
+  collection: ^1.15.0
+  modal_bottom_sheet: ^2.0.0
+  # snapping_sheet: ^3.1.0
+  introduction_screen: ^2.1.0
+  flutter_web_auth: ^0.3.0
+  local_auth: ^1.1.8
+
+dependency_overrides:
+  flutter_colorpicker: ^0.6.0
+  photo_view: ^0.12.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # For localization / l10n:
+  generate: true
+  
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/images/providers/
+    - assets/keys.txt
+  #   - images/a_dot_ham.jpeg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
